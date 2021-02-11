@@ -9,17 +9,17 @@ class App extends React.Component {
         };
     }
 
-    render() {
-        const handleClick = () => {
-            this.setState({active: true});
-        };
+    handleClick() {
+        this.setState({active: true});
+    };
 
+    render() {
         return (
             <div className="App">
                 <header className="App-header">
                     <div
                         className={`App-header__newitem${this.state.active ? "--active" : ""}`}
-                        onClick={() => handleClick()}
+                        onClick={() => this.handleClick()}
                     >
                         <div className="App-header__dots-wrapper">
                             <div className={`App-header__left-star${this.state.active ? "--active" : ""}`}></div>
