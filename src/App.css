@@ -4,13 +4,6 @@
   font-size: 15pt;
 }
 
-.blue {
-  color: blue;
-}
-.blue--red {
-  color: red;
-}
-
 .App-header {
   background-color: #dee0e4;
   min-height: 100vh;
@@ -29,7 +22,6 @@
   border-radius: 25px;
   cursor: pointer;
   background-color: #ced1da;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .App-header__newitem--active {
@@ -40,7 +32,7 @@
   border-radius: 25px;
   cursor: pointer;
   background-color: #ffffff;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .App-header__dots-wrapper {
@@ -118,7 +110,7 @@
 }
 
 .App-header__input {
-  margin-left: -120px;
+  margin-left: -170px;
   background-color: #ced2da;
   min-width: 200px;
   color: #53575c;
@@ -128,7 +120,6 @@
 }
 
 .App-header__input--active {
-  margin-left: -120px;
   background-color: #ffffff;
   font-size: 15pt;
   width: 100%;
@@ -142,7 +133,7 @@
 
 @keyframes inputMoving {
   0% {
-    margin-left: -120px;
+    margin-left: -100px;
   }
   100% {
     margin-left: -50px;
@@ -181,7 +172,6 @@
 
 .App-header__select {
   height: 40px;
-  margin: 5px;
   border-radius: 10px;
   margin-right: 30px;
   background: #dee0e4;
